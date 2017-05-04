@@ -11,418 +11,1588 @@
     <Filter Include="src\tests">
       <UniqueIdentifier>{798090c5-26a0-49ce-9a41-c1d853c19e64}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\tests\core">
-      <UniqueIdentifier>{30788deb-b532-4c9f-9e56-9cd5fab9e4e0}</UniqueIdentifier>
+    <Filter Include="src\libgit2">
+      <UniqueIdentifier>{7ecb087b-6645-4430-baea-99a085bed87f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\tests\merge">
-      <UniqueIdentifier>{dcdc001e-2dab-4f45-b107-4a1fb9a6e18b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\tests\merge\trees">
-      <UniqueIdentifier>{5c9ec977-63e0-441d-9b85-c90d7ef36aae}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\tests\apply">
-      <UniqueIdentifier>{4af823ab-1e3d-4d56-a268-d50d54cac441}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\tests\attr">
-      <UniqueIdentifier>{d2f31c1b-bf1a-4b68-85a9-5cc43507e16f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\tests\blame">
-      <UniqueIdentifier>{a8b28798-4c1f-425a-bcbb-72391b667870}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\tests\buf">
-      <UniqueIdentifier>{16ba2764-8ef8-4f20-8bf8-2a8b771c60ff}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\tests\checkout">
-      <UniqueIdentifier>{1e4b8b48-8505-4613-9dae-ae5d3447fc32}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\tests\cherrypick">
-      <UniqueIdentifier>{06af8dbd-2307-49af-9a72-91ba0cc3a46f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\tests\clone">
-      <UniqueIdentifier>{66f93f99-9d9a-4f80-a0a1-e1a902c8aed0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\tests\commit">
-      <UniqueIdentifier>{dc50c717-de85-4933-8bbc-4a6f17a49d90}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\tests\config">
-      <UniqueIdentifier>{1ec139ad-e25f-48ee-9a88-0903e12d0f6e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\tests\date">
-      <UniqueIdentifier>{071653ff-d21e-42e6-8a68-d1e9fda1f86d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\tests\describe">
-      <UniqueIdentifier>{d1c3e619-2819-4c80-a06b-5fe2e5b9ba62}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\tests\diff">
-      <UniqueIdentifier>{6c7d3e44-2341-4edf-b31e-c0e3fe5d9165}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\tests\fetchhead">
-      <UniqueIdentifier>{e2be61e9-62c3-4e19-b62c-0d5e5bbf056f}</UniqueIdentifier>
+    <Filter Include="src\deps">
+      <UniqueIdentifier>{9b64b18d-e937-4614-8e74-e992fbf025ef}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\clar.c">
       <Filter>src\clar</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src\buf_text.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\buffer.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\cache.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\checkout.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\cherrypick.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\clone.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\commit.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\commit_list.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\config.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\config_cache.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\config_file.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\crlf.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\curl_stream.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\date.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\delta.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\describe.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\diff.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\diff_driver.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\diff_file.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\diff_generate.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\diff_parse.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\diff_print.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\diff_stats.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\diff_tform.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\diff_xdiff.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\errors.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fetch.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fetchhead.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\filebuf.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fileops.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\filter.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fnmatch.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\global.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graph.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hash.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hashsig.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ident.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\idxmap.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ignore.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\index.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\indexer.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\iterator.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\merge.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\merge_driver.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\merge_file.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\message.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mwindow.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\netops.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\notes.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\object.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\object_api.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\odb.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\odb_loose.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\odb_mempack.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\odb_pack.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\offmap.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\oid.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\oidarray.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\oidmap.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\openssl_stream.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pack.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pack-objects.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\patch.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\patch_generate.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\patch_parse.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\path.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pathspec.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pool.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\posix.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\pqueue.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\proxy.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\push.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rebase.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\refdb.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\refdb_fs.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\reflog.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\refs.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\refspec.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\remote.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\repository.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\reset.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\revert.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\revparse.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\revwalk.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\settings.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sha1_lookup.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\signature.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\socket_stream.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sortedcache.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stash.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\status.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stransport_stream.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\strmap.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\submodule.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sysdir.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tag.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\thread-utils.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tls_stream.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\trace.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\transaction.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\transport.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tree.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tree-cache.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tsort.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\util.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\varint.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\vector.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\worktree.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zstream.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hash\hash_win32.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hash\sha1dc\sha1.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\hash\sha1dc\ubc_check.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\transports\auth.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\transports\auth_negotiate.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\transports\cred.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\transports\cred_helpers.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\transports\git.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\transports\http.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\transports\local.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\transports\smart.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\transports\smart_pkt.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\transports\smart_protocol.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\transports\ssh.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\transports\winhttp.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\unix\map.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\unix\realpath.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\win32\dir.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\win32\error.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\win32\findfile.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\win32\map.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\win32\path_w32.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\win32\posix_w32.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\win32\precompiled.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\win32\thread.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\win32\utf-conv.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\win32\w32_buffer.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\win32\w32_crtdbg_stacktrace.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\win32\w32_stack.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\win32\w32_util.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\xdiff\xdiffi.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\xdiff\xemit.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\xdiff\xhistogram.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\xdiff\xmerge.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\xdiff\xpatience.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\xdiff\xprepare.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\xdiff\xutils.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\annotated_commit.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\apply.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\attr.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\attr_file.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\attrcache.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\blame.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\blame_git.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\blob.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\branch.c">
+      <Filter>src\libgit2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\apply\fromdiff.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\apply\fromfile.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\attr\file.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\attr\flags.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\attr\ignore.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\attr\lookup.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\attr\repo.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blame\blame_helpers.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blame\buffer.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blame\getters.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blame\harder.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blame\simple.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\buf\basic.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\buf\oom.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\buf\quote.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\buf\splice.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\checkout\binaryunicode.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\checkout\checkout_helpers.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\checkout\conflict.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\checkout\crlf.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\checkout\head.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\checkout\icase.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\checkout\index.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\checkout\nasty.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\checkout\tree.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\checkout\typechange.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\merge\driver.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\merge\files.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\merge\merge_helpers.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\merge\trees\automerge.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\merge\trees\commits.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\merge\trees\modeconflict.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\merge\trees\recursive.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\merge\trees\renames.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\merge\trees\treediff.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\merge\trees\trivial.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\merge\trees\whitespace.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\merge\workdir\analysis.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\merge\workdir\dirty.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\merge\workdir\recursive.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\merge\workdir\renames.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\merge\workdir\setup.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\merge\workdir\simple.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\merge\workdir\submodules.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\merge\workdir\trivial.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cherrypick\bare.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cherrypick\workdir.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clone\empty.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clone\local.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clone\nonetwork.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clone\transport.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\commit\commit.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\commit\parent.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\commit\parse.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\commit\signature.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\commit\write.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\config\add.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\config\backend.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\config\configlevel.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\config\config_helpers.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\config\global.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\config\include.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\config\multivar.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\config\new.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\config\read.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\config\readonly.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\config\rename.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\config\snapshot.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\config\stress.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\config\validkeyname.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\config\write.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\array.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\bitvec.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\buffer.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\copy.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\dirent.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\encoding.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\env.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\errors.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\features.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\filebuf.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\ftruncate.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\futils.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\hex.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\iconv.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\init.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\link.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\mkdir.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\oid.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\oidmap.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\opts.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\path.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\pool.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\posix.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\pqueue.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\rmdir.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\sha1.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\sortedcache.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\stat.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\stream.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\string.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\strmap.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\strtol.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\structinit.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\useragent.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\vector.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\zstream.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\date\date.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\date\rfc2822.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\describe\describe.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\describe\describe_helpers.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\describe\t6120.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\diff\binary.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\diff\blob.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\diff\diffiter.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\diff\diff_helpers.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\diff\drivers.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\diff\format_email.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\diff\index.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\diff\notify.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\diff\parse.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\diff\patch.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\diff\pathspec.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\diff\racediffiter.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\diff\rename.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\diff\stats.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\diff\submodules.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\diff\tree.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\diff\workdir.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fetchhead\nonetwork.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\filter\blob.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\filter\crlf.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\filter\custom.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\filter\custom_helpers.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\filter\file.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\filter\ident.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\filter\query.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\filter\stream.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\filter\wildcard.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\graph\descendant_of.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\index\add.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\index\addall.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\index\bypath.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\index\cache.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\index\collision.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\index\conflicts.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\index\crlf.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\index\filemodes.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\index\inmemory.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\index\names.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\index\nsec.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\index\racy.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\index\read_index.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\index\read_tree.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\index\rename.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\index\reuc.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\index\stage.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\index\tests.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\index\version.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\iterator\index.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\iterator\iterator_helpers.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\iterator\tree.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\iterator\workdir.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\worktree\config.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\worktree\merge.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\worktree\open.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\worktree\reflog.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\worktree\refs.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\worktree\repository.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\worktree\submodule.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\worktree\worktree.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\worktree\worktree_helpers.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\network\cred.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\network\fetchlocal.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\network\matchhost.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\network\refspecs.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\network\remote\createthenload.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\network\remote\defaultbranch.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\network\remote\delete.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\network\remote\isvalidname.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\network\remote\local.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\network\remote\push.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\network\remote\remotes.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\network\remote\rename.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\network\urlparse.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\notes\notes.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\notes\notesref.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\object\blob\filter.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\object\blob\fromstream.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\object\blob\write.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\object\cache.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\object\commit\commitstagedfile.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\object\lookup.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\object\lookupbypath.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\object\message.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\object\peel.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\object\raw\chars.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\object\raw\compare.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\object\raw\convert.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\object\raw\fromstr.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\object\raw\hash.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\object\raw\short.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\object\raw\size.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\object\raw\type2string.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\object\raw\write.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\object\shortid.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\object\tag\list.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\object\tag\peel.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\object\tag\read.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\object\tag\write.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\object\tree\attributes.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\object\tree\duplicateentries.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\object\tree\frompath.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\object\tree\read.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\object\tree\update.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\object\tree\walk.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\object\tree\write.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\odb\alternates.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\odb\backend\nobackend.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\odb\backend\nonrefreshing.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\odb\emptyobjects.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\odb\foreach.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\odb\freshen.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\odb\loose.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\odb\mixed.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\odb\packed.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\odb\packed_one.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\odb\sorting.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\odb\streamwrite.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\online\badssl.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\online\clone.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\online\fetch.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\online\fetchhead.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\online\push.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\online\push_util.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\online\remotes.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pack\indexer.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pack\packbuilder.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pack\sharing.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\patch\parse.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\patch\print.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\path\core.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\path\win32.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\perf\helper__perf__do_merge.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\perf\helper__perf__timer.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\perf\merge.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rebase\abort.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rebase\inmemory.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rebase\iterator.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rebase\merge.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rebase\setup.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rebase\submodule.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\branches\create.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\branches\delete.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\branches\ishead.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\branches\iterator.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\branches\lookup.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\branches\move.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\branches\name.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\branches\remote.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\branches\upstream.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\branches\upstreamname.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\crashes.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\create.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\createwithlog.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\delete.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\dup.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\foreachglob.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\isvalidname.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\iterator.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\list.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\listall.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\lookup.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\namespaces.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\normalize.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\overwrite.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\pack.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\peel.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\races.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\read.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\reflog\drop.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\reflog\reflog.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\ref_helpers.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\rename.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\revparse.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\settargetwithlog.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\setter.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\shorthand.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\transactions.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\unicode.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\refs\update.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\remote\insteadof.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\repo\config.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\repo\discover.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\repo\env.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\repo\getters.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\repo\hashfile.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\repo\head.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\repo\headtree.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\repo\init.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\repo\message.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\repo\new.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\repo\open.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\repo\pathspec.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\repo\repo_helpers.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\repo\reservedname.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\repo\setters.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\repo\shallow.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\repo\state.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\reset\default.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\reset\hard.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\reset\mixed.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\reset\reset_helpers.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\reset\soft.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\revert\bare.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\revert\workdir.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\revwalk\basic.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\revwalk\hidecb.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\revwalk\mergebase.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\revwalk\signatureparsing.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\revwalk\simplify.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\stash\apply.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\stash\drop.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\stash\foreach.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\stash\save.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\stash\stash_helpers.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\stash\submodules.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\status\ignore.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\status\renames.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\status\single.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\status\status_helpers.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\status\submodules.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\status\worktree.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\status\worktree_init.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\stress\diff.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodule\add.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodule\init.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodule\lookup.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodule\modify.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodule\nosubs.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodule\repository_init.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodule\status.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodule\submodule_helpers.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodule\update.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\threads\basic.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\threads\diff.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\threads\iterator.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\threads\refdb.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\threads\thread_helpers.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\trace\trace.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\trace\windows\stacktrace.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\transport\register.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\win32\forbidden.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\win32\longpath.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clar_libgit2.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clar_libgit2_timer.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clar_libgit2_trace.c">
+      <Filter>src\tests</Filter>
+    </ClCompile>
     <ClCompile Include="..\main.c">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\core\array.c">
-      <Filter>src\tests\core</Filter>
+    <ClCompile Include="..\..\deps\http-parser\http_parser.c">
+      <Filter>src\deps</Filter>
     </ClCompile>
-    <ClCompile Include="..\core\bitvec.c">
-      <Filter>src\tests\core</Filter>
+    <ClCompile Include="..\..\deps\regex\regex.c">
+      <Filter>src\deps</Filter>
     </ClCompile>
-    <ClCompile Include="..\core\buffer.c">
-      <Filter>src\tests\core</Filter>
+    <ClCompile Include="..\..\deps\zlib\adler32.c">
+      <Filter>src\deps</Filter>
     </ClCompile>
-    <ClCompile Include="..\core\copy.c">
-      <Filter>src\tests\core</Filter>
+    <ClCompile Include="..\..\deps\zlib\crc32.c">
+      <Filter>src\deps</Filter>
     </ClCompile>
-    <ClCompile Include="..\core\dirent.c">
-      <Filter>src\tests\core</Filter>
+    <ClCompile Include="..\..\deps\zlib\deflate.c">
+      <Filter>src\deps</Filter>
     </ClCompile>
-    <ClCompile Include="..\core\encoding.c">
-      <Filter>src\tests\core</Filter>
+    <ClCompile Include="..\..\deps\zlib\infback.c">
+      <Filter>src\deps</Filter>
     </ClCompile>
-    <ClCompile Include="..\core\env.c">
-      <Filter>src\tests\core</Filter>
+    <ClCompile Include="..\..\deps\zlib\inffast.c">
+      <Filter>src\deps</Filter>
     </ClCompile>
-    <ClCompile Include="..\core\errors.c">
-      <Filter>src\tests\core</Filter>
+    <ClCompile Include="..\..\deps\zlib\inflate.c">
+      <Filter>src\deps</Filter>
     </ClCompile>
-    <ClCompile Include="..\core\features.c">
-      <Filter>src\tests\core</Filter>
+    <ClCompile Include="..\..\deps\zlib\inftrees.c">
+      <Filter>src\deps</Filter>
     </ClCompile>
-    <ClCompile Include="..\core\filebuf.c">
-      <Filter>src\tests\core</Filter>
+    <ClCompile Include="..\..\deps\zlib\trees.c">
+      <Filter>src\deps</Filter>
     </ClCompile>
-    <ClCompile Include="..\core\ftruncate.c">
-      <Filter>src\tests\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\core\futils.c">
-      <Filter>src\tests\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\core\hex.c">
-      <Filter>src\tests\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\core\iconv.c">
-      <Filter>src\tests\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\core\init.c">
-      <Filter>src\tests\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\core\link.c">
-      <Filter>src\tests\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\core\mkdir.c">
-      <Filter>src\tests\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\core\oid.c">
-      <Filter>src\tests\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\core\oidmap.c">
-      <Filter>src\tests\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\core\opts.c">
-      <Filter>src\tests\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\core\path.c">
-      <Filter>src\tests\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\core\pool.c">
-      <Filter>src\tests\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\core\posix.c">
-      <Filter>src\tests\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\core\pqueue.c">
-      <Filter>src\tests\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\core\rmdir.c">
-      <Filter>src\tests\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\core\sha1.c">
-      <Filter>src\tests\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\core\sortedcache.c">
-      <Filter>src\tests\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\core\stat.c">
-      <Filter>src\tests\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\core\stream.c">
-      <Filter>src\tests\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\core\string.c">
-      <Filter>src\tests\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\core\strmap.c">
-      <Filter>src\tests\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\core\strtol.c">
-      <Filter>src\tests\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\core\structinit.c">
-      <Filter>src\tests\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\core\useragent.c">
-      <Filter>src\tests\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\core\vector.c">
-      <Filter>src\tests\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\core\zstream.c">
-      <Filter>src\tests\core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\merge\trees\whitespace.c">
-      <Filter>src\tests\merge\trees</Filter>
-    </ClCompile>
-    <ClCompile Include="..\merge\trees\automerge.c">
-      <Filter>src\tests\merge\trees</Filter>
-    </ClCompile>
-    <ClCompile Include="..\merge\trees\commits.c">
-      <Filter>src\tests\merge\trees</Filter>
-    </ClCompile>
-    <ClCompile Include="..\merge\trees\modeconflict.c">
-      <Filter>src\tests\merge\trees</Filter>
-    </ClCompile>
-    <ClCompile Include="..\merge\trees\recursive.c">
-      <Filter>src\tests\merge\trees</Filter>
-    </ClCompile>
-    <ClCompile Include="..\merge\trees\renames.c">
-      <Filter>src\tests\merge\trees</Filter>
-    </ClCompile>
-    <ClCompile Include="..\merge\trees\treediff.c">
-      <Filter>src\tests\merge\trees</Filter>
-    </ClCompile>
-    <ClCompile Include="..\merge\trees\trivial.c">
-      <Filter>src\tests\merge\trees</Filter>
-    </ClCompile>
-    <ClCompile Include="..\apply\fromdiff.c">
-      <Filter>src\tests\apply</Filter>
-    </ClCompile>
-    <ClCompile Include="..\apply\fromfile.c">
-      <Filter>src\tests\apply</Filter>
-    </ClCompile>
-    <ClCompile Include="..\attr\file.c">
-      <Filter>src\tests\attr</Filter>
-    </ClCompile>
-    <ClCompile Include="..\attr\flags.c">
-      <Filter>src\tests\attr</Filter>
-    </ClCompile>
-    <ClCompile Include="..\attr\ignore.c">
-      <Filter>src\tests\attr</Filter>
-    </ClCompile>
-    <ClCompile Include="..\attr\lookup.c">
-      <Filter>src\tests\attr</Filter>
-    </ClCompile>
-    <ClCompile Include="..\attr\repo.c">
-      <Filter>src\tests\attr</Filter>
-    </ClCompile>
-    <ClCompile Include="..\blame\blame_helpers.c">
-      <Filter>src\tests\blame</Filter>
-    </ClCompile>
-    <ClCompile Include="..\blame\buffer.c">
-      <Filter>src\tests\blame</Filter>
-    </ClCompile>
-    <ClCompile Include="..\blame\getters.c">
-      <Filter>src\tests\blame</Filter>
-    </ClCompile>
-    <ClCompile Include="..\blame\harder.c">
-      <Filter>src\tests\blame</Filter>
-    </ClCompile>
-    <ClCompile Include="..\blame\simple.c">
-      <Filter>src\tests\blame</Filter>
-    </ClCompile>
-    <ClCompile Include="..\buf\basic.c">
-      <Filter>src\tests\buf</Filter>
-    </ClCompile>
-    <ClCompile Include="..\buf\oom.c">
-      <Filter>src\tests\buf</Filter>
-    </ClCompile>
-    <ClCompile Include="..\buf\quote.c">
-      <Filter>src\tests\buf</Filter>
-    </ClCompile>
-    <ClCompile Include="..\buf\splice.c">
-      <Filter>src\tests\buf</Filter>
-    </ClCompile>
-    <ClCompile Include="..\checkout\binaryunicode.c">
-      <Filter>src\tests\checkout</Filter>
-    </ClCompile>
-    <ClCompile Include="..\checkout\checkout_helpers.c">
-      <Filter>src\tests\checkout</Filter>
-    </ClCompile>
-    <ClCompile Include="..\checkout\conflict.c">
-      <Filter>src\tests\checkout</Filter>
-    </ClCompile>
-    <ClCompile Include="..\checkout\crlf.c">
-      <Filter>src\tests\checkout</Filter>
-    </ClCompile>
-    <ClCompile Include="..\checkout\head.c">
-      <Filter>src\tests\checkout</Filter>
-    </ClCompile>
-    <ClCompile Include="..\checkout\icase.c">
-      <Filter>src\tests\checkout</Filter>
-    </ClCompile>
-    <ClCompile Include="..\checkout\index.c">
-      <Filter>src\tests\checkout</Filter>
-    </ClCompile>
-    <ClCompile Include="..\checkout\nasty.c">
-      <Filter>src\tests\checkout</Filter>
-    </ClCompile>
-    <ClCompile Include="..\checkout\tree.c">
-      <Filter>src\tests\checkout</Filter>
-    </ClCompile>
-    <ClCompile Include="..\checkout\typechange.c">
-      <Filter>src\tests\checkout</Filter>
-    </ClCompile>
-    <ClCompile Include="..\cherrypick\bare.c">
-      <Filter>src\tests\cherrypick</Filter>
-    </ClCompile>
-    <ClCompile Include="..\cherrypick\workdir.c">
-      <Filter>src\tests\cherrypick</Filter>
-    </ClCompile>
-    <ClCompile Include="..\clone\empty.c">
-      <Filter>src\tests\clone</Filter>
-    </ClCompile>
-    <ClCompile Include="..\clone\local.c">
-      <Filter>src\tests\clone</Filter>
-    </ClCompile>
-    <ClCompile Include="..\clone\nonetwork.c">
-      <Filter>src\tests\clone</Filter>
-    </ClCompile>
-    <ClCompile Include="..\clone\transport.c">
-      <Filter>src\tests\clone</Filter>
-    </ClCompile>
-    <ClCompile Include="..\commit\commit.c">
-      <Filter>src\tests\commit</Filter>
-    </ClCompile>
-    <ClCompile Include="..\commit\parent.c">
-      <Filter>src\tests\commit</Filter>
-    </ClCompile>
-    <ClCompile Include="..\commit\parse.c">
-      <Filter>src\tests\commit</Filter>
-    </ClCompile>
-    <ClCompile Include="..\commit\signature.c">
-      <Filter>src\tests\commit</Filter>
-    </ClCompile>
-    <ClCompile Include="..\commit\write.c">
-      <Filter>src\tests\commit</Filter>
-    </ClCompile>
-    <ClCompile Include="..\config\write.c">
-      <Filter>src\tests\config</Filter>
-    </ClCompile>
-    <ClCompile Include="..\config\add.c">
-      <Filter>src\tests\config</Filter>
-    </ClCompile>
-    <ClCompile Include="..\config\backend.c">
-      <Filter>src\tests\config</Filter>
-    </ClCompile>
-    <ClCompile Include="..\config\config_helpers.c">
-      <Filter>src\tests\config</Filter>
-    </ClCompile>
-    <ClCompile Include="..\config\configlevel.c">
-      <Filter>src\tests\config</Filter>
-    </ClCompile>
-    <ClCompile Include="..\config\global.c">
-      <Filter>src\tests\config</Filter>
-    </ClCompile>
-    <ClCompile Include="..\config\include.c">
-      <Filter>src\tests\config</Filter>
-    </ClCompile>
-    <ClCompile Include="..\config\multivar.c">
-      <Filter>src\tests\config</Filter>
-    </ClCompile>
-    <ClCompile Include="..\config\new.c">
-      <Filter>src\tests\config</Filter>
-    </ClCompile>
-    <ClCompile Include="..\config\read.c">
-      <Filter>src\tests\config</Filter>
-    </ClCompile>
-    <ClCompile Include="..\config\readonly.c">
-      <Filter>src\tests\config</Filter>
-    </ClCompile>
-    <ClCompile Include="..\config\rename.c">
-      <Filter>src\tests\config</Filter>
-    </ClCompile>
-    <ClCompile Include="..\config\snapshot.c">
-      <Filter>src\tests\config</Filter>
-    </ClCompile>
-    <ClCompile Include="..\config\stress.c">
-      <Filter>src\tests\config</Filter>
-    </ClCompile>
-    <ClCompile Include="..\config\validkeyname.c">
-      <Filter>src\tests\config</Filter>
-    </ClCompile>
-    <ClCompile Include="..\date\rfc2822.c">
-      <Filter>src\tests\date</Filter>
-    </ClCompile>
-    <ClCompile Include="..\date\date.c">
-      <Filter>src\tests\date</Filter>
-    </ClCompile>
-    <ClCompile Include="..\describe\describe.c">
-      <Filter>src\tests\describe</Filter>
-    </ClCompile>
-    <ClCompile Include="..\describe\describe_helpers.c">
-      <Filter>src\tests\describe</Filter>
-    </ClCompile>
-    <ClCompile Include="..\describe\t6120.c">
-      <Filter>src\tests\describe</Filter>
-    </ClCompile>
-    <ClCompile Include="..\diff\workdir.c">
-      <Filter>src\tests\diff</Filter>
-    </ClCompile>
-    <ClCompile Include="..\diff\binary.c">
-      <Filter>src\tests\diff</Filter>
-    </ClCompile>
-    <ClCompile Include="..\diff\blob.c">
-      <Filter>src\tests\diff</Filter>
-    </ClCompile>
-    <ClCompile Include="..\diff\diff_helpers.c">
-      <Filter>src\tests\diff</Filter>
-    </ClCompile>
-    <ClCompile Include="..\diff\diffiter.c">
-      <Filter>src\tests\diff</Filter>
-    </ClCompile>
-    <ClCompile Include="..\diff\drivers.c">
-      <Filter>src\tests\diff</Filter>
-    </ClCompile>
-    <ClCompile Include="..\diff\format_email.c">
-      <Filter>src\tests\diff</Filter>
-    </ClCompile>
-    <ClCompile Include="..\diff\index.c">
-      <Filter>src\tests\diff</Filter>
-    </ClCompile>
-    <ClCompile Include="..\diff\notify.c">
-      <Filter>src\tests\diff</Filter>
-    </ClCompile>
-    <ClCompile Include="..\diff\parse.c">
-      <Filter>src\tests\diff</Filter>
-    </ClCompile>
-    <ClCompile Include="..\diff\patch.c">
-      <Filter>src\tests\diff</Filter>
-    </ClCompile>
-    <ClCompile Include="..\diff\pathspec.c">
-      <Filter>src\tests\diff</Filter>
-    </ClCompile>
-    <ClCompile Include="..\diff\racediffiter.c">
-      <Filter>src\tests\diff</Filter>
-    </ClCompile>
-    <ClCompile Include="..\diff\rename.c">
-      <Filter>src\tests\diff</Filter>
-    </ClCompile>
-    <ClCompile Include="..\diff\stats.c">
-      <Filter>src\tests\diff</Filter>
-    </ClCompile>
-    <ClCompile Include="..\diff\submodules.c">
-      <Filter>src\tests\diff</Filter>
-    </ClCompile>
-    <ClCompile Include="..\diff\tree.c">
-      <Filter>src\tests\diff</Filter>
-    </ClCompile>
-    <ClCompile Include="..\fetchhead\nonetwork.c">
-      <Filter>src\tests\fetchhead</Filter>
+    <ClCompile Include="..\..\deps\zlib\zutil.c">
+      <Filter>src\deps</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -441,26 +1611,594 @@
     <ClInclude Include="..\clar\sandbox.h">
       <Filter>src\clar</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\src\branch.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\buf_text.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\buffer.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\cache.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\cc-compat.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\checkout.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\clone.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\commit.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\commit_list.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\config.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\config_file.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\curl_stream.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\delta.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\diff.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\diff_driver.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\diff_file.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\diff_generate.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\diff_parse.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\diff_tform.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\diff_xdiff.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\fetch.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\fetchhead.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\filebuf.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\fileops.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\filter.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\fnmatch.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\global.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\hash.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\idxmap.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ignore.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\index.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\indexer.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\integer.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\iterator.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\khash.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\map.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\merge.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\merge_driver.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\message.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\mwindow.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\netops.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\notes.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\object.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\odb.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\offmap.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\oid.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\oidarray.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\oidmap.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\openssl_stream.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\pack.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\pack-objects.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\patch.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\patch_generate.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\patch_parse.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\path.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\pathspec.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\pool.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\posix.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\pqueue.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\proxy.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\push.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\refdb.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\refdb_fs.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\reflog.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\refs.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\refspec.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\remote.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\repo_template.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\repository.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\revwalk.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sha1_lookup.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\signature.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\socket_stream.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sortedcache.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\status.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\stransport_stream.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\stream.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\strmap.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\strnlen.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\submodule.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sysdir.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tag.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\thread-utils.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tls_stream.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\trace.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\transaction.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tree.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tree-cache.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\userdiff.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\varint.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\vector.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\worktree.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zstream.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\hash\hash_collisiondetect.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\hash\hash_common_crypto.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\hash\hash_openssl.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\hash\hash_win32.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\hash\sha1dc\sha1.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\hash\sha1dc\ubc_check.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\transports\auth.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\transports\auth_negotiate.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\transports\cred.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\transports\smart.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\transports\ssh.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\unix\posix.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\unix\pthread.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\win32\dir.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\win32\error.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\win32\findfile.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\win32\mingw-compat.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\win32\msvc-compat.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\win32\path_w32.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\win32\posix.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\win32\precompiled.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\win32\reparse.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\win32\thread.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\win32\utf-conv.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\win32\version.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\win32\w32_buffer.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\win32\w32_crtdbg_stacktrace.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\win32\w32_stack.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\win32\w32_util.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\win32\win32-compat.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\xdiff\xdiff.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\xdiff\xdiffi.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\xdiff\xemit.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\xdiff\xinclude.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\xdiff\xmacros.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\xdiff\xprepare.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\xdiff\xtypes.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\xdiff\xutils.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\annotated_commit.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\apply.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\array.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\attr.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\attr_file.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\attrcache.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\bitvec.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\blame.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\blame_git.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\blob.h">
+      <Filter>src\libgit2</Filter>
+    </ClInclude>
     <ClInclude Include="..\attr\attr_expect.h">
-      <Filter>src\tests\attr</Filter>
+      <Filter>src\tests</Filter>
     </ClInclude>
     <ClInclude Include="..\blame\blame_helpers.h">
-      <Filter>src\tests\blame</Filter>
+      <Filter>src\tests</Filter>
     </ClInclude>
     <ClInclude Include="..\checkout\checkout_helpers.h">
-      <Filter>src\tests\checkout</Filter>
+      <Filter>src\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\merge\conflict_data.h">
+      <Filter>src\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\merge\merge_helpers.h">
+      <Filter>src\tests</Filter>
     </ClInclude>
     <ClInclude Include="..\config\config_helpers.h">
-      <Filter>src\tests\config</Filter>
+      <Filter>src\tests</Filter>
     </ClInclude>
     <ClInclude Include="..\describe\describe_helpers.h">
-      <Filter>src\tests\describe</Filter>
+      <Filter>src\tests</Filter>
     </ClInclude>
     <ClInclude Include="..\diff\diff_helpers.h">
-      <Filter>src\tests\diff</Filter>
+      <Filter>src\tests</Filter>
     </ClInclude>
     <ClInclude Include="..\fetchhead\fetchhead_data.h">
-      <Filter>src\tests\fetchhead</Filter>
+      <Filter>src\tests</Filter>
     </ClInclude>
+    <ClInclude Include="..\filter\crlf.h">
+      <Filter>src\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\filter\custom_helpers.h">
+      <Filter>src\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\index\conflicts.h">
+      <Filter>src\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\iterator\iterator_helpers.h">
+      <Filter>src\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\worktree\worktree_helpers.h">
+      <Filter>src\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\object\raw\data.h">
+      <Filter>src\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\odb\loose_data.h">
+      <Filter>src\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\odb\pack_data.h">
+      <Filter>src\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\odb\pack_data_one.h">
+      <Filter>src\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\online\push_util.h">
+      <Filter>src\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\patch\patch_common.h">
+      <Filter>src\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\perf\helper__perf__do_merge.h">
+      <Filter>src\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\perf\helper__perf__timer.h">
+      <Filter>src\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\refs\ref_helpers.h">
+      <Filter>src\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\repo\repo_helpers.h">
+      <Filter>src\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\reset\reset_helpers.h">
+      <Filter>src\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stash\stash_helpers.h">
+      <Filter>src\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\status\status_data.h">
+      <Filter>src\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\status\status_helpers.h">
+      <Filter>src\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\submodule\submodule_helpers.h">
+      <Filter>src\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\threads\thread_helpers.h">
+      <Filter>src\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clar_libgit2.h">
+      <Filter>src\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clar_libgit2_timer.h">
+      <Filter>src\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clar_libgit2_trace.h">
+      <Filter>src\tests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\deps\http-parser\http_parser.h">
+      <Filter>src\deps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\deps\regex\config.h">
+      <Filter>src\deps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\deps\regex\regex.h">
+      <Filter>src\deps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\deps\zlib\crc32.h">
+      <Filter>src\deps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\deps\zlib\deflate.h">
+      <Filter>src\deps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\deps\zlib\inffast.h">
+      <Filter>src\deps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\deps\zlib\inffixed.h">
+      <Filter>src\deps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\deps\zlib\inflate.h">
+      <Filter>src\deps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\deps\zlib\inftrees.h">
+      <Filter>src\deps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\deps\zlib\trees.h">
+      <Filter>src\deps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\deps\zlib\zconf.h">
+      <Filter>src\deps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\deps\zlib\zlib.h">
+      <Filter>src\deps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\deps\zlib\zutil.h">
+      <Filter>src\deps</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\src\win32\git2.rc">
+      <Filter>src\libgit2</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\resources\userdiff\after\file.html">
+      <Filter>src\tests</Filter>
+    </None>
+    <None Include="..\resources\userdiff\before\file.html">
+      <Filter>src\tests</Filter>
+    </None>
+    <None Include="..\resources\userdiff\expected\driver\diff.html">
+      <Filter>src\tests</Filter>
+    </None>
+    <None Include="..\resources\userdiff\expected\nodriver\diff.html">
+      <Filter>src\tests</Filter>
+    </None>
+    <None Include="..\resources\userdiff\files\file.html">
+      <Filter>src\tests</Filter>
+    </None>
   </ItemGroup>
 </Project>

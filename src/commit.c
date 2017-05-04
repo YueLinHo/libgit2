@@ -331,7 +331,7 @@ int git_commit_amend(
 {
 	git_repository *repo;
 	git_oid tree_id;
-	git_reference *ref;
+	git_reference *ref = NULL;
 	int error;
 
 	assert(id && commit_to_amend);

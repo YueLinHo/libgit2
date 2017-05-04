@@ -116,6 +116,7 @@ is_blank (int c)
 # define SIZE_MAX ((size_t) -1)
 #endif
 
+#include "config.h"
 #ifndef NO_MBSUPPORT
 #include "mbsupport.h" /* gawk */
 #endif

@@ -191,7 +191,7 @@ static void verify_tracking_branches(git_remote *remote, expected_ref expected_r
 	git_buf ref_name = GIT_BUF_INIT;
 	git_vector actual_refs = GIT_VECTOR_INIT;
 	git_branch_iterator *iter;
-	char *actual_ref;
+	char *actual_ref = NULL;
 	git_oid oid;
 	int failed = 0, error;
 	git_branch_t branch_type;

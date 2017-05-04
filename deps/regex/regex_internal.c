@@ -18,6 +18,9 @@
    Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
    02110-1301 USA.  */
 
+#include "regex.h"
+#include "regex_internal.h"
+
 static void re_string_construct_common (const char *str, int len,
 					re_string_t *pstr,
 					RE_TRANSLATE_TYPE trans, int icase,
@@ -921,9 +924,7 @@ re_string_destruct (re_string_t *pstr)
 
 /* Return the context at IDX in INPUT.  */
 
-static unsigned int
-internal_function
-re_string_context_at (const re_string_t *input, int idx, int eflags)
+static unsigned int internal_function re_string_context_at (const re_string_t *input, int idx, int eflags)
 {
   int c;
   if (BE (idx < 0, 0))

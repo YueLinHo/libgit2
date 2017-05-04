@@ -18,6 +18,9 @@
    Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
    02110-1301 USA.  */
 
+#include "regex.h"
+#include "regex_internal.h"
+
 static reg_errcode_t match_ctx_init (re_match_context_t *cache, int eflags,
 				     int n) internal_function;
 static void match_ctx_clean (re_match_context_t *mctx) internal_function;
@@ -3315,8 +3318,8 @@ build_trtable (const re_dfa_t *dfa, re_dfastate_t *state)
   reg_errcode_t err;
   int i, j, ch, need_word_trtable = 0;
   bitset_word_t elem, mask;
-  bool dests_node_malloced = false;
-  bool dest_states_malloced = false;
+  int dests_node_malloced = 0;
+  int dest_states_malloced = 0;
   int ndests; /* Number of the destination states from `state'.  */
   re_dfastate_t **trtable;
   re_dfastate_t **dest_states = NULL, **dest_states_word, **dest_states_nl;
@@ -3343,7 +3346,7 @@ build_trtable (const re_dfa_t *dfa, re_dfastate_t *state)
       dests_alloc = re_malloc (struct dests_alloc, 1);
       if (BE (dests_alloc == NULL, 0))
 	return 0;
-      dests_node_malloced = true;
+      dests_node_malloced = 1;
     }
   dests_node = dests_alloc->dests_node;
   dests_ch = dests_alloc->dests_ch;
@@ -3401,7 +3404,7 @@ out_free:
 	    free (dests_alloc);
 	  return 0;
 	}
-      dest_states_malloced = true;
+      dest_states_malloced = 1;
     }
   dest_states_word = dest_states + ndests;
   dest_states_nl = dest_states_word + ndests;
@@ -3606,7 +3609,7 @@ group_nodes_into_DFAstates (const re_dfa_t *dfa, const re_dfastate_t *state,
 	{
 	  if (constraint & NEXT_NEWLINE_CONSTRAINT)
 	    {
-	      bool accepts_newline = bitset_contain (accepts, NEWLINE_CHAR);
+	      int accepts_newline = bitset_contain (accepts, NEWLINE_CHAR);
 	      bitset_empty (accepts);
 	      if (accepts_newline)
 		bitset_set (accepts, NEWLINE_CHAR);
