@@ -1,0 +1,466 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx;h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="src\clar">
+      <UniqueIdentifier>{1ee729b4-0429-4af8-92f4-5eedb0fe7770}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tests">
+      <UniqueIdentifier>{798090c5-26a0-49ce-9a41-c1d853c19e64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tests\core">
+      <UniqueIdentifier>{30788deb-b532-4c9f-9e56-9cd5fab9e4e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tests\merge">
+      <UniqueIdentifier>{dcdc001e-2dab-4f45-b107-4a1fb9a6e18b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tests\merge\trees">
+      <UniqueIdentifier>{5c9ec977-63e0-441d-9b85-c90d7ef36aae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tests\apply">
+      <UniqueIdentifier>{4af823ab-1e3d-4d56-a268-d50d54cac441}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tests\attr">
+      <UniqueIdentifier>{d2f31c1b-bf1a-4b68-85a9-5cc43507e16f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tests\blame">
+      <UniqueIdentifier>{a8b28798-4c1f-425a-bcbb-72391b667870}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tests\buf">
+      <UniqueIdentifier>{16ba2764-8ef8-4f20-8bf8-2a8b771c60ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tests\checkout">
+      <UniqueIdentifier>{1e4b8b48-8505-4613-9dae-ae5d3447fc32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tests\cherrypick">
+      <UniqueIdentifier>{06af8dbd-2307-49af-9a72-91ba0cc3a46f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tests\clone">
+      <UniqueIdentifier>{66f93f99-9d9a-4f80-a0a1-e1a902c8aed0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tests\commit">
+      <UniqueIdentifier>{dc50c717-de85-4933-8bbc-4a6f17a49d90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tests\config">
+      <UniqueIdentifier>{1ec139ad-e25f-48ee-9a88-0903e12d0f6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tests\date">
+      <UniqueIdentifier>{071653ff-d21e-42e6-8a68-d1e9fda1f86d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tests\describe">
+      <UniqueIdentifier>{d1c3e619-2819-4c80-a06b-5fe2e5b9ba62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tests\diff">
+      <UniqueIdentifier>{6c7d3e44-2341-4edf-b31e-c0e3fe5d9165}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tests\fetchhead">
+      <UniqueIdentifier>{e2be61e9-62c3-4e19-b62c-0d5e5bbf056f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\clar.c">
+      <Filter>src\clar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\array.c">
+      <Filter>src\tests\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\bitvec.c">
+      <Filter>src\tests\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\buffer.c">
+      <Filter>src\tests\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\copy.c">
+      <Filter>src\tests\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\dirent.c">
+      <Filter>src\tests\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\encoding.c">
+      <Filter>src\tests\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\env.c">
+      <Filter>src\tests\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\errors.c">
+      <Filter>src\tests\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\features.c">
+      <Filter>src\tests\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\filebuf.c">
+      <Filter>src\tests\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\ftruncate.c">
+      <Filter>src\tests\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\futils.c">
+      <Filter>src\tests\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\hex.c">
+      <Filter>src\tests\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\iconv.c">
+      <Filter>src\tests\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\init.c">
+      <Filter>src\tests\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\link.c">
+      <Filter>src\tests\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\mkdir.c">
+      <Filter>src\tests\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\oid.c">
+      <Filter>src\tests\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\oidmap.c">
+      <Filter>src\tests\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\opts.c">
+      <Filter>src\tests\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\path.c">
+      <Filter>src\tests\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\pool.c">
+      <Filter>src\tests\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\posix.c">
+      <Filter>src\tests\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\pqueue.c">
+      <Filter>src\tests\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\rmdir.c">
+      <Filter>src\tests\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\sha1.c">
+      <Filter>src\tests\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\sortedcache.c">
+      <Filter>src\tests\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\stat.c">
+      <Filter>src\tests\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\stream.c">
+      <Filter>src\tests\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\string.c">
+      <Filter>src\tests\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\strmap.c">
+      <Filter>src\tests\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\strtol.c">
+      <Filter>src\tests\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\structinit.c">
+      <Filter>src\tests\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\useragent.c">
+      <Filter>src\tests\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\vector.c">
+      <Filter>src\tests\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\zstream.c">
+      <Filter>src\tests\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\merge\trees\whitespace.c">
+      <Filter>src\tests\merge\trees</Filter>
+    </ClCompile>
+    <ClCompile Include="..\merge\trees\automerge.c">
+      <Filter>src\tests\merge\trees</Filter>
+    </ClCompile>
+    <ClCompile Include="..\merge\trees\commits.c">
+      <Filter>src\tests\merge\trees</Filter>
+    </ClCompile>
+    <ClCompile Include="..\merge\trees\modeconflict.c">
+      <Filter>src\tests\merge\trees</Filter>
+    </ClCompile>
+    <ClCompile Include="..\merge\trees\recursive.c">
+      <Filter>src\tests\merge\trees</Filter>
+    </ClCompile>
+    <ClCompile Include="..\merge\trees\renames.c">
+      <Filter>src\tests\merge\trees</Filter>
+    </ClCompile>
+    <ClCompile Include="..\merge\trees\treediff.c">
+      <Filter>src\tests\merge\trees</Filter>
+    </ClCompile>
+    <ClCompile Include="..\merge\trees\trivial.c">
+      <Filter>src\tests\merge\trees</Filter>
+    </ClCompile>
+    <ClCompile Include="..\apply\fromdiff.c">
+      <Filter>src\tests\apply</Filter>
+    </ClCompile>
+    <ClCompile Include="..\apply\fromfile.c">
+      <Filter>src\tests\apply</Filter>
+    </ClCompile>
+    <ClCompile Include="..\attr\file.c">
+      <Filter>src\tests\attr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\attr\flags.c">
+      <Filter>src\tests\attr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\attr\ignore.c">
+      <Filter>src\tests\attr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\attr\lookup.c">
+      <Filter>src\tests\attr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\attr\repo.c">
+      <Filter>src\tests\attr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blame\blame_helpers.c">
+      <Filter>src\tests\blame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blame\buffer.c">
+      <Filter>src\tests\blame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blame\getters.c">
+      <Filter>src\tests\blame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blame\harder.c">
+      <Filter>src\tests\blame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blame\simple.c">
+      <Filter>src\tests\blame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\buf\basic.c">
+      <Filter>src\tests\buf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\buf\oom.c">
+      <Filter>src\tests\buf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\buf\quote.c">
+      <Filter>src\tests\buf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\buf\splice.c">
+      <Filter>src\tests\buf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\checkout\binaryunicode.c">
+      <Filter>src\tests\checkout</Filter>
+    </ClCompile>
+    <ClCompile Include="..\checkout\checkout_helpers.c">
+      <Filter>src\tests\checkout</Filter>
+    </ClCompile>
+    <ClCompile Include="..\checkout\conflict.c">
+      <Filter>src\tests\checkout</Filter>
+    </ClCompile>
+    <ClCompile Include="..\checkout\crlf.c">
+      <Filter>src\tests\checkout</Filter>
+    </ClCompile>
+    <ClCompile Include="..\checkout\head.c">
+      <Filter>src\tests\checkout</Filter>
+    </ClCompile>
+    <ClCompile Include="..\checkout\icase.c">
+      <Filter>src\tests\checkout</Filter>
+    </ClCompile>
+    <ClCompile Include="..\checkout\index.c">
+      <Filter>src\tests\checkout</Filter>
+    </ClCompile>
+    <ClCompile Include="..\checkout\nasty.c">
+      <Filter>src\tests\checkout</Filter>
+    </ClCompile>
+    <ClCompile Include="..\checkout\tree.c">
+      <Filter>src\tests\checkout</Filter>
+    </ClCompile>
+    <ClCompile Include="..\checkout\typechange.c">
+      <Filter>src\tests\checkout</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cherrypick\bare.c">
+      <Filter>src\tests\cherrypick</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cherrypick\workdir.c">
+      <Filter>src\tests\cherrypick</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clone\empty.c">
+      <Filter>src\tests\clone</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clone\local.c">
+      <Filter>src\tests\clone</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clone\nonetwork.c">
+      <Filter>src\tests\clone</Filter>
+    </ClCompile>
+    <ClCompile Include="..\clone\transport.c">
+      <Filter>src\tests\clone</Filter>
+    </ClCompile>
+    <ClCompile Include="..\commit\commit.c">
+      <Filter>src\tests\commit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\commit\parent.c">
+      <Filter>src\tests\commit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\commit\parse.c">
+      <Filter>src\tests\commit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\commit\signature.c">
+      <Filter>src\tests\commit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\commit\write.c">
+      <Filter>src\tests\commit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\config\write.c">
+      <Filter>src\tests\config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\config\add.c">
+      <Filter>src\tests\config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\config\backend.c">
+      <Filter>src\tests\config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\config\config_helpers.c">
+      <Filter>src\tests\config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\config\configlevel.c">
+      <Filter>src\tests\config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\config\global.c">
+      <Filter>src\tests\config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\config\include.c">
+      <Filter>src\tests\config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\config\multivar.c">
+      <Filter>src\tests\config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\config\new.c">
+      <Filter>src\tests\config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\config\read.c">
+      <Filter>src\tests\config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\config\readonly.c">
+      <Filter>src\tests\config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\config\rename.c">
+      <Filter>src\tests\config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\config\snapshot.c">
+      <Filter>src\tests\config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\config\stress.c">
+      <Filter>src\tests\config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\config\validkeyname.c">
+      <Filter>src\tests\config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\date\rfc2822.c">
+      <Filter>src\tests\date</Filter>
+    </ClCompile>
+    <ClCompile Include="..\date\date.c">
+      <Filter>src\tests\date</Filter>
+    </ClCompile>
+    <ClCompile Include="..\describe\describe.c">
+      <Filter>src\tests\describe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\describe\describe_helpers.c">
+      <Filter>src\tests\describe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\describe\t6120.c">
+      <Filter>src\tests\describe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\diff\workdir.c">
+      <Filter>src\tests\diff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\diff\binary.c">
+      <Filter>src\tests\diff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\diff\blob.c">
+      <Filter>src\tests\diff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\diff\diff_helpers.c">
+      <Filter>src\tests\diff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\diff\diffiter.c">
+      <Filter>src\tests\diff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\diff\drivers.c">
+      <Filter>src\tests\diff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\diff\format_email.c">
+      <Filter>src\tests\diff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\diff\index.c">
+      <Filter>src\tests\diff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\diff\notify.c">
+      <Filter>src\tests\diff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\diff\parse.c">
+      <Filter>src\tests\diff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\diff\patch.c">
+      <Filter>src\tests\diff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\diff\pathspec.c">
+      <Filter>src\tests\diff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\diff\racediffiter.c">
+      <Filter>src\tests\diff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\diff\rename.c">
+      <Filter>src\tests\diff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\diff\stats.c">
+      <Filter>src\tests\diff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\diff\submodules.c">
+      <Filter>src\tests\diff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\diff\tree.c">
+      <Filter>src\tests\diff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fetchhead\nonetwork.c">
+      <Filter>src\tests\fetchhead</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\clar.h">
+      <Filter>src\clar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clar\fixtures.h">
+      <Filter>src\clar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clar\fs.h">
+      <Filter>src\clar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clar\print.h">
+      <Filter>src\clar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\clar\sandbox.h">
+      <Filter>src\clar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\attr\attr_expect.h">
+      <Filter>src\tests\attr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blame\blame_helpers.h">
+      <Filter>src\tests\blame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\checkout\checkout_helpers.h">
+      <Filter>src\tests\checkout</Filter>
+    </ClInclude>
+    <ClInclude Include="..\config\config_helpers.h">
+      <Filter>src\tests\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\describe\describe_helpers.h">
+      <Filter>src\tests\describe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\diff\diff_helpers.h">
+      <Filter>src\tests\diff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fetchhead\fetchhead_data.h">
+      <Filter>src\tests\fetchhead</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

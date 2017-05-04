@@ -1,0 +1,595 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EA0762B4-7368-4E62-BF09-AD3BA0256042}</ProjectGuid>
+    <RootNamespace>test</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <CompileAs>CompileAsC</CompileAs>
+      <AdditionalIncludeDirectories>..\;..\clar;..\..\deps\http-parser;..\..\deps\regex;..\..\deps\zlib;..\..\include;..\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MBCS;_CRT_SECURE_NO_WARNINGS;GIT_WINHTTP;GIT_THREADS;GIT_SHA1_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <CompileAs>CompileAsC</CompileAs>
+      <AdditionalIncludeDirectories>..\;..\clar;..\..\deps\http-parser;..\..\deps\regex;..\..\deps\zlib;..\..\include;..\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MBCS;_CRT_SECURE_NO_WARNINGS;GIT_WINHTTP;GIT_THREADS;GIT_SHA1_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\annotated_commit.c" />
+    <ClCompile Include="..\..\src\apply.c" />
+    <ClCompile Include="..\..\src\attr.c" />
+    <ClCompile Include="..\..\src\attrcache.c" />
+    <ClCompile Include="..\..\src\attr_file.c" />
+    <ClCompile Include="..\..\src\blame.c" />
+    <ClCompile Include="..\..\src\blame_git.c" />
+    <ClCompile Include="..\..\src\blob.c" />
+    <ClCompile Include="..\..\src\branch.c" />
+    <ClCompile Include="..\..\src\buffer.c" />
+    <ClCompile Include="..\..\src\buf_text.c" />
+    <ClCompile Include="..\..\src\cache.c" />
+    <ClCompile Include="..\..\src\checkout.c" />
+    <ClCompile Include="..\..\src\cherrypick.c" />
+    <ClCompile Include="..\..\src\clone.c" />
+    <ClCompile Include="..\..\src\commit.c" />
+    <ClCompile Include="..\..\src\commit_list.c" />
+    <ClCompile Include="..\..\src\config.c" />
+    <ClCompile Include="..\..\src\config_cache.c" />
+    <ClCompile Include="..\..\src\config_file.c" />
+    <ClCompile Include="..\..\src\crlf.c" />
+    <ClCompile Include="..\..\src\curl_stream.c" />
+    <ClCompile Include="..\..\src\date.c" />
+    <ClCompile Include="..\..\src\delta.c" />
+    <ClCompile Include="..\..\src\describe.c" />
+    <ClCompile Include="..\..\src\diff.c" />
+    <ClCompile Include="..\..\src\diff_driver.c" />
+    <ClCompile Include="..\..\src\diff_file.c" />
+    <ClCompile Include="..\..\src\diff_generate.c" />
+    <ClCompile Include="..\..\src\diff_parse.c" />
+    <ClCompile Include="..\..\src\diff_print.c" />
+    <ClCompile Include="..\..\src\diff_stats.c" />
+    <ClCompile Include="..\..\src\diff_tform.c" />
+    <ClCompile Include="..\..\src\diff_xdiff.c" />
+    <ClCompile Include="..\..\src\errors.c" />
+    <ClCompile Include="..\..\src\fetch.c" />
+    <ClCompile Include="..\..\src\fetchhead.c" />
+    <ClCompile Include="..\..\src\filebuf.c" />
+    <ClCompile Include="..\..\src\fileops.c" />
+    <ClCompile Include="..\..\src\filter.c" />
+    <ClCompile Include="..\..\src\fnmatch.c" />
+    <ClCompile Include="..\..\src\global.c" />
+    <ClCompile Include="..\..\src\graph.c" />
+    <ClCompile Include="..\..\src\hash.c" />
+    <ClCompile Include="..\..\src\hashsig.c" />
+    <ClCompile Include="..\..\src\hash\hash_generic.c" />
+    <ClCompile Include="..\..\src\hash\hash_win32.c" />
+    <ClCompile Include="..\..\src\hash\sha1dc\sha1.c" />
+    <ClCompile Include="..\..\src\hash\sha1dc\ubc_check.c" />
+    <ClCompile Include="..\..\src\ident.c" />
+    <ClCompile Include="..\..\src\idxmap.c" />
+    <ClCompile Include="..\..\src\ignore.c" />
+    <ClCompile Include="..\..\src\index.c" />
+    <ClCompile Include="..\..\src\indexer.c" />
+    <ClCompile Include="..\..\src\iterator.c" />
+    <ClCompile Include="..\..\src\merge.c" />
+    <ClCompile Include="..\..\src\merge_driver.c" />
+    <ClCompile Include="..\..\src\merge_file.c" />
+    <ClCompile Include="..\..\src\message.c" />
+    <ClCompile Include="..\..\src\mwindow.c" />
+    <ClCompile Include="..\..\src\netops.c" />
+    <ClCompile Include="..\..\src\notes.c" />
+    <ClCompile Include="..\..\src\object.c" />
+    <ClCompile Include="..\..\src\object_api.c" />
+    <ClCompile Include="..\..\src\odb.c" />
+    <ClCompile Include="..\..\src\odb_loose.c" />
+    <ClCompile Include="..\..\src\odb_mempack.c" />
+    <ClCompile Include="..\..\src\odb_pack.c" />
+    <ClCompile Include="..\..\src\offmap.c" />
+    <ClCompile Include="..\..\src\oid.c" />
+    <ClCompile Include="..\..\src\oidarray.c" />
+    <ClCompile Include="..\..\src\oidmap.c" />
+    <ClCompile Include="..\..\src\openssl_stream.c" />
+    <ClCompile Include="..\..\src\pack-objects.c" />
+    <ClCompile Include="..\..\src\pack.c" />
+    <ClCompile Include="..\..\src\patch.c" />
+    <ClCompile Include="..\..\src\patch_generate.c" />
+    <ClCompile Include="..\..\src\patch_parse.c" />
+    <ClCompile Include="..\..\src\path.c" />
+    <ClCompile Include="..\..\src\pathspec.c" />
+    <ClCompile Include="..\..\src\pool.c" />
+    <ClCompile Include="..\..\src\posix.c" />
+    <ClCompile Include="..\..\src\pqueue.c" />
+    <ClCompile Include="..\..\src\proxy.c" />
+    <ClCompile Include="..\..\src\push.c" />
+    <ClCompile Include="..\..\src\rebase.c" />
+    <ClCompile Include="..\..\src\refdb.c" />
+    <ClCompile Include="..\..\src\refdb_fs.c" />
+    <ClCompile Include="..\..\src\reflog.c" />
+    <ClCompile Include="..\..\src\refs.c" />
+    <ClCompile Include="..\..\src\refspec.c" />
+    <ClCompile Include="..\..\src\remote.c" />
+    <ClCompile Include="..\..\src\repository.c" />
+    <ClCompile Include="..\..\src\reset.c" />
+    <ClCompile Include="..\..\src\revert.c" />
+    <ClCompile Include="..\..\src\revparse.c" />
+    <ClCompile Include="..\..\src\revwalk.c" />
+    <ClCompile Include="..\..\src\settings.c" />
+    <ClCompile Include="..\..\src\sha1_lookup.c" />
+    <ClCompile Include="..\..\src\signature.c" />
+    <ClCompile Include="..\..\src\socket_stream.c" />
+    <ClCompile Include="..\..\src\sortedcache.c" />
+    <ClCompile Include="..\..\src\stash.c" />
+    <ClCompile Include="..\..\src\status.c" />
+    <ClCompile Include="..\..\src\stransport_stream.c" />
+    <ClCompile Include="..\..\src\strmap.c" />
+    <ClCompile Include="..\..\src\submodule.c" />
+    <ClCompile Include="..\..\src\sysdir.c" />
+    <ClCompile Include="..\..\src\tag.c" />
+    <ClCompile Include="..\..\src\thread-utils.c" />
+    <ClCompile Include="..\..\src\tls_stream.c" />
+    <ClCompile Include="..\..\src\trace.c" />
+    <ClCompile Include="..\..\src\transaction.c" />
+    <ClCompile Include="..\..\src\transport.c" />
+    <ClCompile Include="..\..\src\transports\auth.c" />
+    <ClCompile Include="..\..\src\transports\auth_negotiate.c" />
+    <ClCompile Include="..\..\src\transports\cred.c" />
+    <ClCompile Include="..\..\src\transports\cred_helpers.c" />
+    <ClCompile Include="..\..\src\transports\git.c" />
+    <ClCompile Include="..\..\src\transports\http.c" />
+    <ClCompile Include="..\..\src\transports\local.c" />
+    <ClCompile Include="..\..\src\transports\smart.c" />
+    <ClCompile Include="..\..\src\transports\smart_pkt.c" />
+    <ClCompile Include="..\..\src\transports\smart_protocol.c" />
+    <ClCompile Include="..\..\src\transports\ssh.c" />
+    <ClCompile Include="..\..\src\transports\winhttp.c" />
+    <ClCompile Include="..\..\src\tree-cache.c" />
+    <ClCompile Include="..\..\src\tree.c" />
+    <ClCompile Include="..\..\src\tsort.c" />
+    <ClCompile Include="..\..\src\unix\map.c" />
+    <ClCompile Include="..\..\src\unix\realpath.c" />
+    <ClCompile Include="..\..\src\util.c" />
+    <ClCompile Include="..\..\src\varint.c" />
+    <ClCompile Include="..\..\src\vector.c" />
+    <ClCompile Include="..\..\src\win32\dir.c" />
+    <ClCompile Include="..\..\src\win32\error.c" />
+    <ClCompile Include="..\..\src\win32\findfile.c" />
+    <ClCompile Include="..\..\src\win32\map.c" />
+    <ClCompile Include="..\..\src\win32\path_w32.c" />
+    <ClCompile Include="..\..\src\win32\posix_w32.c" />
+    <ClCompile Include="..\..\src\win32\precompiled.c" />
+    <ClCompile Include="..\..\src\win32\thread.c" />
+    <ClCompile Include="..\..\src\win32\utf-conv.c" />
+    <ClCompile Include="..\..\src\win32\w32_buffer.c" />
+    <ClCompile Include="..\..\src\win32\w32_crtdbg_stacktrace.c" />
+    <ClCompile Include="..\..\src\win32\w32_stack.c" />
+    <ClCompile Include="..\..\src\win32\w32_util.c" />
+    <ClCompile Include="..\..\src\worktree.c" />
+    <ClCompile Include="..\..\src\xdiff\xdiffi.c" />
+    <ClCompile Include="..\..\src\xdiff\xemit.c" />
+    <ClCompile Include="..\..\src\xdiff\xhistogram.c" />
+    <ClCompile Include="..\..\src\xdiff\xmerge.c" />
+    <ClCompile Include="..\..\src\xdiff\xpatience.c" />
+    <ClCompile Include="..\..\src\xdiff\xprepare.c" />
+    <ClCompile Include="..\..\src\xdiff\xutils.c" />
+    <ClCompile Include="..\..\src\zstream.c" />
+    <ClCompile Include="..\apply\fromdiff.c" />
+    <ClCompile Include="..\apply\fromfile.c" />
+    <ClCompile Include="..\attr\file.c" />
+    <ClCompile Include="..\attr\flags.c" />
+    <ClCompile Include="..\attr\ignore.c" />
+    <ClCompile Include="..\attr\lookup.c" />
+    <ClCompile Include="..\attr\repo.c" />
+    <ClCompile Include="..\blame\blame_helpers.c" />
+    <ClCompile Include="..\blame\buffer.c" />
+    <ClCompile Include="..\blame\getters.c" />
+    <ClCompile Include="..\blame\harder.c" />
+    <ClCompile Include="..\blame\simple.c" />
+    <ClCompile Include="..\buf\basic.c" />
+    <ClCompile Include="..\buf\oom.c" />
+    <ClCompile Include="..\buf\quote.c" />
+    <ClCompile Include="..\buf\splice.c" />
+    <ClCompile Include="..\checkout\binaryunicode.c" />
+    <ClCompile Include="..\checkout\checkout_helpers.c" />
+    <ClCompile Include="..\checkout\conflict.c" />
+    <ClCompile Include="..\checkout\crlf.c" />
+    <ClCompile Include="..\checkout\head.c" />
+    <ClCompile Include="..\checkout\icase.c" />
+    <ClCompile Include="..\checkout\index.c" />
+    <ClCompile Include="..\checkout\nasty.c" />
+    <ClCompile Include="..\checkout\tree.c" />
+    <ClCompile Include="..\checkout\typechange.c" />
+    <ClCompile Include="..\cherrypick\bare.c" />
+    <ClCompile Include="..\cherrypick\workdir.c" />
+    <ClCompile Include="..\clar.c" />
+    <ClCompile Include="..\clone\empty.c" />
+    <ClCompile Include="..\clone\local.c" />
+    <ClCompile Include="..\clone\nonetwork.c" />
+    <ClCompile Include="..\clone\transport.c" />
+    <ClCompile Include="..\commit\commit.c" />
+    <ClCompile Include="..\commit\parent.c" />
+    <ClCompile Include="..\commit\parse.c" />
+    <ClCompile Include="..\commit\signature.c" />
+    <ClCompile Include="..\commit\write.c" />
+    <ClCompile Include="..\config\add.c" />
+    <ClCompile Include="..\config\backend.c" />
+    <ClCompile Include="..\config\configlevel.c" />
+    <ClCompile Include="..\config\config_helpers.c" />
+    <ClCompile Include="..\config\global.c" />
+    <ClCompile Include="..\config\include.c" />
+    <ClCompile Include="..\config\multivar.c" />
+    <ClCompile Include="..\config\new.c" />
+    <ClCompile Include="..\config\read.c" />
+    <ClCompile Include="..\config\readonly.c" />
+    <ClCompile Include="..\config\rename.c" />
+    <ClCompile Include="..\config\snapshot.c" />
+    <ClCompile Include="..\config\stress.c" />
+    <ClCompile Include="..\config\validkeyname.c" />
+    <ClCompile Include="..\config\write.c" />
+    <ClCompile Include="..\core\array.c" />
+    <ClCompile Include="..\core\bitvec.c" />
+    <ClCompile Include="..\core\buffer.c" />
+    <ClCompile Include="..\core\copy.c" />
+    <ClCompile Include="..\core\dirent.c" />
+    <ClCompile Include="..\core\encoding.c" />
+    <ClCompile Include="..\core\env.c" />
+    <ClCompile Include="..\core\errors.c" />
+    <ClCompile Include="..\core\features.c" />
+    <ClCompile Include="..\core\filebuf.c" />
+    <ClCompile Include="..\core\ftruncate.c" />
+    <ClCompile Include="..\core\futils.c" />
+    <ClCompile Include="..\core\hex.c" />
+    <ClCompile Include="..\core\iconv.c" />
+    <ClCompile Include="..\core\init.c" />
+    <ClCompile Include="..\core\link.c" />
+    <ClCompile Include="..\core\mkdir.c" />
+    <ClCompile Include="..\core\oid.c" />
+    <ClCompile Include="..\core\oidmap.c" />
+    <ClCompile Include="..\core\opts.c" />
+    <ClCompile Include="..\core\path.c" />
+    <ClCompile Include="..\core\pool.c" />
+    <ClCompile Include="..\core\posix.c" />
+    <ClCompile Include="..\core\pqueue.c" />
+    <ClCompile Include="..\core\rmdir.c" />
+    <ClCompile Include="..\core\sha1.c" />
+    <ClCompile Include="..\core\sortedcache.c" />
+    <ClCompile Include="..\core\stat.c" />
+    <ClCompile Include="..\core\stream.c" />
+    <ClCompile Include="..\core\string.c" />
+    <ClCompile Include="..\core\strmap.c" />
+    <ClCompile Include="..\core\strtol.c" />
+    <ClCompile Include="..\core\structinit.c" />
+    <ClCompile Include="..\core\useragent.c" />
+    <ClCompile Include="..\core\vector.c" />
+    <ClCompile Include="..\core\zstream.c" />
+    <ClCompile Include="..\date\date.c" />
+    <ClCompile Include="..\date\rfc2822.c" />
+    <ClCompile Include="..\describe\describe.c" />
+    <ClCompile Include="..\describe\describe_helpers.c" />
+    <ClCompile Include="..\describe\t6120.c" />
+    <ClCompile Include="..\diff\binary.c" />
+    <ClCompile Include="..\diff\blob.c" />
+    <ClCompile Include="..\diff\diffiter.c" />
+    <ClCompile Include="..\diff\diff_helpers.c" />
+    <ClCompile Include="..\diff\drivers.c" />
+    <ClCompile Include="..\diff\format_email.c" />
+    <ClCompile Include="..\diff\index.c" />
+    <ClCompile Include="..\diff\notify.c" />
+    <ClCompile Include="..\diff\parse.c" />
+    <ClCompile Include="..\diff\patch.c" />
+    <ClCompile Include="..\diff\pathspec.c" />
+    <ClCompile Include="..\diff\racediffiter.c" />
+    <ClCompile Include="..\diff\rename.c" />
+    <ClCompile Include="..\diff\stats.c" />
+    <ClCompile Include="..\diff\submodules.c" />
+    <ClCompile Include="..\diff\tree.c" />
+    <ClCompile Include="..\diff\workdir.c" />
+    <ClCompile Include="..\fetchhead\nonetwork.c" />
+    <ClCompile Include="..\main.c" />
+    <ClCompile Include="..\merge\trees\automerge.c" />
+    <ClCompile Include="..\merge\trees\commits.c" />
+    <ClCompile Include="..\merge\trees\modeconflict.c" />
+    <ClCompile Include="..\merge\trees\recursive.c" />
+    <ClCompile Include="..\merge\trees\renames.c" />
+    <ClCompile Include="..\merge\trees\treediff.c" />
+    <ClCompile Include="..\merge\trees\trivial.c" />
+    <ClCompile Include="..\merge\trees\whitespace.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\git2.h" />
+    <ClInclude Include="..\..\include\git2\annotated_commit.h" />
+    <ClInclude Include="..\..\include\git2\attr.h" />
+    <ClInclude Include="..\..\include\git2\blame.h" />
+    <ClInclude Include="..\..\include\git2\blob.h" />
+    <ClInclude Include="..\..\include\git2\branch.h" />
+    <ClInclude Include="..\..\include\git2\buffer.h" />
+    <ClInclude Include="..\..\include\git2\checkout.h" />
+    <ClInclude Include="..\..\include\git2\cherrypick.h" />
+    <ClInclude Include="..\..\include\git2\clone.h" />
+    <ClInclude Include="..\..\include\git2\commit.h" />
+    <ClInclude Include="..\..\include\git2\common.h" />
+    <ClInclude Include="..\..\include\git2\config.h" />
+    <ClInclude Include="..\..\include\git2\cred_helpers.h" />
+    <ClInclude Include="..\..\include\git2\describe.h" />
+    <ClInclude Include="..\..\include\git2\diff.h" />
+    <ClInclude Include="..\..\include\git2\errors.h" />
+    <ClInclude Include="..\..\include\git2\filter.h" />
+    <ClInclude Include="..\..\include\git2\global.h" />
+    <ClInclude Include="..\..\include\git2\graph.h" />
+    <ClInclude Include="..\..\include\git2\ignore.h" />
+    <ClInclude Include="..\..\include\git2\index.h" />
+    <ClInclude Include="..\..\include\git2\indexer.h" />
+    <ClInclude Include="..\..\include\git2\inttypes.h" />
+    <ClInclude Include="..\..\include\git2\merge.h" />
+    <ClInclude Include="..\..\include\git2\message.h" />
+    <ClInclude Include="..\..\include\git2\net.h" />
+    <ClInclude Include="..\..\include\git2\notes.h" />
+    <ClInclude Include="..\..\include\git2\object.h" />
+    <ClInclude Include="..\..\include\git2\odb.h" />
+    <ClInclude Include="..\..\include\git2\odb_backend.h" />
+    <ClInclude Include="..\..\include\git2\oid.h" />
+    <ClInclude Include="..\..\include\git2\oidarray.h" />
+    <ClInclude Include="..\..\include\git2\pack.h" />
+    <ClInclude Include="..\..\include\git2\patch.h" />
+    <ClInclude Include="..\..\include\git2\pathspec.h" />
+    <ClInclude Include="..\..\include\git2\proxy.h" />
+    <ClInclude Include="..\..\include\git2\rebase.h" />
+    <ClInclude Include="..\..\include\git2\refdb.h" />
+    <ClInclude Include="..\..\include\git2\reflog.h" />
+    <ClInclude Include="..\..\include\git2\refs.h" />
+    <ClInclude Include="..\..\include\git2\refspec.h" />
+    <ClInclude Include="..\..\include\git2\remote.h" />
+    <ClInclude Include="..\..\include\git2\repository.h" />
+    <ClInclude Include="..\..\include\git2\reset.h" />
+    <ClInclude Include="..\..\include\git2\revert.h" />
+    <ClInclude Include="..\..\include\git2\revparse.h" />
+    <ClInclude Include="..\..\include\git2\revwalk.h" />
+    <ClInclude Include="..\..\include\git2\signature.h" />
+    <ClInclude Include="..\..\include\git2\stash.h" />
+    <ClInclude Include="..\..\include\git2\status.h" />
+    <ClInclude Include="..\..\include\git2\stdint.h" />
+    <ClInclude Include="..\..\include\git2\strarray.h" />
+    <ClInclude Include="..\..\include\git2\submodule.h" />
+    <ClInclude Include="..\..\include\git2\sys\commit.h" />
+    <ClInclude Include="..\..\include\git2\sys\config.h" />
+    <ClInclude Include="..\..\include\git2\sys\diff.h" />
+    <ClInclude Include="..\..\include\git2\sys\filter.h" />
+    <ClInclude Include="..\..\include\git2\sys\hashsig.h" />
+    <ClInclude Include="..\..\include\git2\sys\index.h" />
+    <ClInclude Include="..\..\include\git2\sys\mempack.h" />
+    <ClInclude Include="..\..\include\git2\sys\merge.h" />
+    <ClInclude Include="..\..\include\git2\sys\odb_backend.h" />
+    <ClInclude Include="..\..\include\git2\sys\openssl.h" />
+    <ClInclude Include="..\..\include\git2\sys\refdb_backend.h" />
+    <ClInclude Include="..\..\include\git2\sys\reflog.h" />
+    <ClInclude Include="..\..\include\git2\sys\refs.h" />
+    <ClInclude Include="..\..\include\git2\sys\remote.h" />
+    <ClInclude Include="..\..\include\git2\sys\repository.h" />
+    <ClInclude Include="..\..\include\git2\sys\stream.h" />
+    <ClInclude Include="..\..\include\git2\sys\time.h" />
+    <ClInclude Include="..\..\include\git2\sys\transport.h" />
+    <ClInclude Include="..\..\include\git2\tag.h" />
+    <ClInclude Include="..\..\include\git2\trace.h" />
+    <ClInclude Include="..\..\include\git2\transaction.h" />
+    <ClInclude Include="..\..\include\git2\transport.h" />
+    <ClInclude Include="..\..\include\git2\tree.h" />
+    <ClInclude Include="..\..\include\git2\types.h" />
+    <ClInclude Include="..\..\include\git2\version.h" />
+    <ClInclude Include="..\..\include\git2\worktree.h" />
+    <ClInclude Include="..\..\src\annotated_commit.h" />
+    <ClInclude Include="..\..\src\apply.h" />
+    <ClInclude Include="..\..\src\array.h" />
+    <ClInclude Include="..\..\src\attr.h" />
+    <ClInclude Include="..\..\src\attrcache.h" />
+    <ClInclude Include="..\..\src\attr_file.h" />
+    <ClInclude Include="..\..\src\bitvec.h" />
+    <ClInclude Include="..\..\src\blame.h" />
+    <ClInclude Include="..\..\src\blame_git.h" />
+    <ClInclude Include="..\..\src\blob.h" />
+    <ClInclude Include="..\..\src\branch.h" />
+    <ClInclude Include="..\..\src\buffer.h" />
+    <ClInclude Include="..\..\src\buf_text.h" />
+    <ClInclude Include="..\..\src\cache.h" />
+    <ClInclude Include="..\..\src\cc-compat.h" />
+    <ClInclude Include="..\..\src\checkout.h" />
+    <ClInclude Include="..\..\src\clone.h" />
+    <ClInclude Include="..\..\src\commit.h" />
+    <ClInclude Include="..\..\src\commit_list.h" />
+    <ClInclude Include="..\..\src\common.h" />
+    <ClInclude Include="..\..\src\config.h" />
+    <ClInclude Include="..\..\src\config_file.h" />
+    <ClInclude Include="..\..\src\curl_stream.h" />
+    <ClInclude Include="..\..\src\delta.h" />
+    <ClInclude Include="..\..\src\diff.h" />
+    <ClInclude Include="..\..\src\diff_driver.h" />
+    <ClInclude Include="..\..\src\diff_file.h" />
+    <ClInclude Include="..\..\src\diff_generate.h" />
+    <ClInclude Include="..\..\src\diff_parse.h" />
+    <ClInclude Include="..\..\src\diff_tform.h" />
+    <ClInclude Include="..\..\src\diff_xdiff.h" />
+    <ClInclude Include="..\..\src\fetch.h" />
+    <ClInclude Include="..\..\src\fetchhead.h" />
+    <ClInclude Include="..\..\src\filebuf.h" />
+    <ClInclude Include="..\..\src\fileops.h" />
+    <ClInclude Include="..\..\src\filter.h" />
+    <ClInclude Include="..\..\src\fnmatch.h" />
+    <ClInclude Include="..\..\src\global.h" />
+    <ClInclude Include="..\..\src\hash.h" />
+    <ClInclude Include="..\..\src\hash\hash_collisiondetect.h" />
+    <ClInclude Include="..\..\src\hash\hash_common_crypto.h" />
+    <ClInclude Include="..\..\src\hash\hash_generic.h" />
+    <ClInclude Include="..\..\src\hash\hash_openssl.h" />
+    <ClInclude Include="..\..\src\hash\hash_win32.h" />
+    <ClInclude Include="..\..\src\hash\sha1dc\sha1.h" />
+    <ClInclude Include="..\..\src\hash\sha1dc\ubc_check.h" />
+    <ClInclude Include="..\..\src\idxmap.h" />
+    <ClInclude Include="..\..\src\ignore.h" />
+    <ClInclude Include="..\..\src\index.h" />
+    <ClInclude Include="..\..\src\indexer.h" />
+    <ClInclude Include="..\..\src\integer.h" />
+    <ClInclude Include="..\..\src\iterator.h" />
+    <ClInclude Include="..\..\src\khash.h" />
+    <ClInclude Include="..\..\src\map.h" />
+    <ClInclude Include="..\..\src\merge.h" />
+    <ClInclude Include="..\..\src\merge_driver.h" />
+    <ClInclude Include="..\..\src\message.h" />
+    <ClInclude Include="..\..\src\mwindow.h" />
+    <ClInclude Include="..\..\src\netops.h" />
+    <ClInclude Include="..\..\src\notes.h" />
+    <ClInclude Include="..\..\src\object.h" />
+    <ClInclude Include="..\..\src\odb.h" />
+    <ClInclude Include="..\..\src\offmap.h" />
+    <ClInclude Include="..\..\src\oid.h" />
+    <ClInclude Include="..\..\src\oidarray.h" />
+    <ClInclude Include="..\..\src\oidmap.h" />
+    <ClInclude Include="..\..\src\openssl_stream.h" />
+    <ClInclude Include="..\..\src\pack-objects.h" />
+    <ClInclude Include="..\..\src\pack.h" />
+    <ClInclude Include="..\..\src\patch.h" />
+    <ClInclude Include="..\..\src\patch_generate.h" />
+    <ClInclude Include="..\..\src\patch_parse.h" />
+    <ClInclude Include="..\..\src\path.h" />
+    <ClInclude Include="..\..\src\pathspec.h" />
+    <ClInclude Include="..\..\src\pool.h" />
+    <ClInclude Include="..\..\src\posix.h" />
+    <ClInclude Include="..\..\src\pqueue.h" />
+    <ClInclude Include="..\..\src\proxy.h" />
+    <ClInclude Include="..\..\src\push.h" />
+    <ClInclude Include="..\..\src\refdb.h" />
+    <ClInclude Include="..\..\src\refdb_fs.h" />
+    <ClInclude Include="..\..\src\reflog.h" />
+    <ClInclude Include="..\..\src\refs.h" />
+    <ClInclude Include="..\..\src\refspec.h" />
+    <ClInclude Include="..\..\src\remote.h" />
+    <ClInclude Include="..\..\src\repository.h" />
+    <ClInclude Include="..\..\src\repo_template.h" />
+    <ClInclude Include="..\..\src\revwalk.h" />
+    <ClInclude Include="..\..\src\sha1_lookup.h" />
+    <ClInclude Include="..\..\src\signature.h" />
+    <ClInclude Include="..\..\src\socket_stream.h" />
+    <ClInclude Include="..\..\src\sortedcache.h" />
+    <ClInclude Include="..\..\src\status.h" />
+    <ClInclude Include="..\..\src\stransport_stream.h" />
+    <ClInclude Include="..\..\src\stream.h" />
+    <ClInclude Include="..\..\src\strmap.h" />
+    <ClInclude Include="..\..\src\strnlen.h" />
+    <ClInclude Include="..\..\src\submodule.h" />
+    <ClInclude Include="..\..\src\sysdir.h" />
+    <ClInclude Include="..\..\src\tag.h" />
+    <ClInclude Include="..\..\src\thread-utils.h" />
+    <ClInclude Include="..\..\src\tls_stream.h" />
+    <ClInclude Include="..\..\src\trace.h" />
+    <ClInclude Include="..\..\src\transaction.h" />
+    <ClInclude Include="..\..\src\transports\auth.h" />
+    <ClInclude Include="..\..\src\transports\auth_negotiate.h" />
+    <ClInclude Include="..\..\src\transports\cred.h" />
+    <ClInclude Include="..\..\src\transports\smart.h" />
+    <ClInclude Include="..\..\src\transports\ssh.h" />
+    <ClInclude Include="..\..\src\tree-cache.h" />
+    <ClInclude Include="..\..\src\tree.h" />
+    <ClInclude Include="..\..\src\unix\posix.h" />
+    <ClInclude Include="..\..\src\unix\pthread.h" />
+    <ClInclude Include="..\..\src\userdiff.h" />
+    <ClInclude Include="..\..\src\util.h" />
+    <ClInclude Include="..\..\src\varint.h" />
+    <ClInclude Include="..\..\src\vector.h" />
+    <ClInclude Include="..\..\src\win32\dir.h" />
+    <ClInclude Include="..\..\src\win32\error.h" />
+    <ClInclude Include="..\..\src\win32\findfile.h" />
+    <ClInclude Include="..\..\src\win32\mingw-compat.h" />
+    <ClInclude Include="..\..\src\win32\msvc-compat.h" />
+    <ClInclude Include="..\..\src\win32\path_w32.h" />
+    <ClInclude Include="..\..\src\win32\posix.h" />
+    <ClInclude Include="..\..\src\win32\precompiled.h" />
+    <ClInclude Include="..\..\src\win32\reparse.h" />
+    <ClInclude Include="..\..\src\win32\thread.h" />
+    <ClInclude Include="..\..\src\win32\utf-conv.h" />
+    <ClInclude Include="..\..\src\win32\version.h" />
+    <ClInclude Include="..\..\src\win32\w32_buffer.h" />
+    <ClInclude Include="..\..\src\win32\w32_crtdbg_stacktrace.h" />
+    <ClInclude Include="..\..\src\win32\w32_stack.h" />
+    <ClInclude Include="..\..\src\win32\w32_util.h" />
+    <ClInclude Include="..\..\src\win32\win32-compat.h" />
+    <ClInclude Include="..\..\src\worktree.h" />
+    <ClInclude Include="..\..\src\xdiff\xdiff.h" />
+    <ClInclude Include="..\..\src\xdiff\xdiffi.h" />
+    <ClInclude Include="..\..\src\xdiff\xemit.h" />
+    <ClInclude Include="..\..\src\xdiff\xinclude.h" />
+    <ClInclude Include="..\..\src\xdiff\xmacros.h" />
+    <ClInclude Include="..\..\src\xdiff\xprepare.h" />
+    <ClInclude Include="..\..\src\xdiff\xtypes.h" />
+    <ClInclude Include="..\..\src\xdiff\xutils.h" />
+    <ClInclude Include="..\..\src\zstream.h" />
+    <ClInclude Include="..\attr\attr_expect.h" />
+    <ClInclude Include="..\blame\blame_helpers.h" />
+    <ClInclude Include="..\checkout\checkout_helpers.h" />
+    <ClInclude Include="..\clar.h" />
+    <ClInclude Include="..\clar\fixtures.h" />
+    <ClInclude Include="..\clar\fs.h" />
+    <ClInclude Include="..\clar\print.h" />
+    <ClInclude Include="..\clar\sandbox.h" />
+    <ClInclude Include="..\config\config_helpers.h" />
+    <ClInclude Include="..\describe\describe_helpers.h" />
+    <ClInclude Include="..\diff\diff_helpers.h" />
+    <ClInclude Include="..\fetchhead\fetchhead_data.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\src\win32\git2.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
